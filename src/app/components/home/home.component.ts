@@ -23,7 +23,6 @@ export class HomeComponent {
       this.error = true;
       this.loading=false;
       this.mensajeError = errorService.error.error.message;
-      asdasdasdasd
     })
   }
 
