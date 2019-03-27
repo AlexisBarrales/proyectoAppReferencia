@@ -121,4 +121,15 @@ export class TarjetasComponent {
 
     this.router.navigate(['/artista',artistaId])
   }
+
+  verArtista1(item: any){
+    let artistaId;
+    if (item.type === 'artist') {
+      artistaId = item.id
+    } else {
+      artistaId = item.artists[0].id;
+    }
+
+    this.router.navigate(['/artista',artistaId])
+  }
 }
